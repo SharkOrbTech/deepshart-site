@@ -394,7 +394,7 @@ h3 { font-size: 1.16rem; line-height: 1.32; font-weight: 685; }
   grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
   gap: clamp(1.8rem, 7vw, 6rem);
 }
-.section-intro > p, .platform-section > p { margin-top: .9rem; max-width: 39rem; }
+.section-intro > p { margin-top: .9rem; max-width: 39rem; }
 .inline-link, .prose a {
   color: var(--accent);
   text-decoration-thickness: 1px;

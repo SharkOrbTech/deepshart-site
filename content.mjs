@@ -35,10 +35,8 @@ export const languages = {
       sync: [
         ['network', 'Direct device sync', 'Compare the verification code on both devices before syncing. Choose how to merge changes or which copy to keep.'],
         ['cloud', 'Tencent Cloud COS', 'Sync snapshots and backups to a private bucket under your own account.'],
-        ['lock-keyhole', 'Separate permissions on iPhone', 'Manage permissions for DeepSeek, Tencent Cloud COS and device sync in Privacy & Data. Credentials use the system Keychain.'],
       ],
       platformTitle: 'Phone and desktop',
-      platformNote: 'The iPhone and Android layouts fit smaller screens. The macOS and Windows layouts keep the conversation list next to the chat.',
     },
     privacy: {
       title: 'Privacy policy',
@@ -102,10 +100,8 @@ export const languages = {
       sync: [
         ['network', '设备直连', '在两台设备上核对配对校验码。同步时可以合并内容，或选择以其中一台为准。'],
         ['cloud', '腾讯云 COS', '将对话快照和备份同步到自己账户下的私有存储桶。'],
-        ['lock-keyhole', 'iPhone 独立授权', '在「隐私与数据」中分别管理 DeepSeek、腾讯云 COS 和设备同步的授权。密钥保存在系统 Keychain。'],
       ],
       platformTitle: '支持手机和电脑',
-      platformNote: 'iPhone 和 Android 使用移动布局。macOS 和 Windows 可在对话旁同时查看会话列表。',
     },
     privacy: {
       title: '隐私政策',

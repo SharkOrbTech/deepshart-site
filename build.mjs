@@ -82,7 +82,6 @@ function home(root, language, content) {
     </div>
     <section class="wrap section platform-section" id="platforms" data-reveal>
       <h2>${escape(data.platformTitle)}</h2>
-      <p>${escape(data.platformNote)}</p>
       <ul class="platform-list">
         ${[['smartphone', 'iPhone'], ['smartphone', 'Android'], ['laptop', 'macOS'], ['monitor', 'Windows']].map(([symbol, name]) =>
           `<li>${icon(root, symbol)}<span>${name}</span></li>`).join('')}
