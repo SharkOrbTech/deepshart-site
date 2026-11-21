@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" data-language="en" data-alternate="./zh/" data-auto-language>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Use your own DeepSeek API key. Keep a local conversation history and sync it when you choose.">
+  <title>DeepShart for phone and desktop</title>
+  <link rel="canonical" href="https://deepshart.lol/">
+  <link rel="alternate" hreflang="en" href="https://deepshart.lol/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://deepshart.lol/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://deepshart.lol/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DeepShart for phone and desktop">
+  <meta property="og:description" content="Use your own DeepSeek API key. Keep a local conversation history and sync it when you choose.">
+  <meta property="og:url" content="https://deepshart.lol/">
+  <meta property="og:image" content="https://deepshart.lol/assets/desktop.webp">
+  <link rel="icon" type="image/png" href="./assets/shark.png">
+  <script src="./assets/preferences.js"></script>
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">
+        <img src="./assets/shark.png" width="34" height="34" alt="">
+        <span>DeepShart</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./#features">Features</a>
+        <a href="./#platforms">Platforms</a>
+        <a href="./support/">Support</a>
+      </nav>
+      <div class="preferences">
+        <a class="language" data-set-language="zh" href="./zh/" lang="zh-Hans">
+          <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#languages"></use></svg> <span>中文</span>
+        </a>
+        <button class="theme" type="button" data-theme-toggle data-light="Switch to light mode" data-dark="Switch to dark mode" aria-label="Switch to dark mode" hidden>
+          <svg class="icon day" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#moon"></use></svg><svg class="icon night" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#sun"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <h1><span>DeepSeek chat</span> <span>on phone and desktop.</span></h1>
+        <p>Use your own DeepSeek API key. Keep a local conversation history and sync it when you choose.</p>
+        <div class="hero-links">
+          <a class="button primary" href="https://gitee.com/sharkymuxii/deep-shart/releases/tag/V1.0.1"><svg class="icon download-icon" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#gitee"></use></svg> Download on Gitee</a>
+          <a class="button secondary" href="#features">Explore features</a>
+        </div>
+      </div>
+      <div class="showcase" role="group" aria-label="Desktop preview / Phone preview">
+    <button type="button" class="shot desktop" data-preview="Desktop preview" aria-label="Desktop preview" disabled>
+      <img class="day" src="./assets/desktop.webp" width="1600" height="1088" alt="DeepShart desktop interface with a conversation sidebar and sample reading notes" fetchpriority="high">
+      <img class="night" src="./assets/desktop-dark.webp" width="1600" height="1088" alt="DeepShart desktop interface with a conversation sidebar and sample reading notes">
+      <span class="zoom-icon"><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#maximize-2"></use></svg></span>
+    </button><button type="button" class="shot phone" data-preview="Phone preview" aria-label="Phone preview" disabled>
+      <img class="day" src="./assets/phone.webp" width="690" height="1338" alt="DeepShart mobile interface showing the same sample conversation">
+      <img class="night" src="./assets/phone-dark.webp" width="690" height="1338" alt="DeepShart mobile interface showing the same sample conversation">
+      <span class="zoom-icon"><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#maximize-2"></use></svg></span>
+    </button>
+  </div>
+  <dialog class="preview-dialog" aria-labelledby="preview-title">
+    <div class="preview-content">
+      <div class="preview-header">
+        <h2 id="preview-title"></h2>
+        <button class="preview-close" type="button" aria-label="Close preview"><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#x"></use></svg></button>
+      </div>
+      <img alt="">
+    </div>
+  </dialog>
+    </section>
+    <section class="wrap section feature-section" id="features" data-reveal>
+      <h2>Chat and organize your conversations</h2>
+      <ul class="feature-list">
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#brain"></use></svg>
+      <div>
+        <h3>Deep thinking and web search</h3>
+        <p>Choose a model, control reasoning effort and open citations from web search.</p>
+      </div>
+    </li>
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#paperclip"></use></svg>
+      <div>
+        <h3>Images and documents</h3>
+        <p>Attach photos and files. Browse attachments from your conversation history.</p>
+      </div>
+    </li>
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#pin"></use></svg>
+      <div>
+        <h3>Memory and context</h3>
+        <p>Pin important messages, review saved memories and summarize long conversations while keeping the original messages.</p>
+      </div>
+    </li>
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#search"></use></svg>
+      <div>
+        <h3>Search, import and export</h3>
+        <p>Find a message in your history, import DeepSeek conversations and export a copy.</p>
+      </div>
+    </li>
+  </ul>
+    </section>
+    <div class="tint">
+      <section class="wrap section sync-section" data-reveal>
+        <div class="section-intro">
+          <h2>Sync when you choose</h2>
+          <p>Choose direct device sync or a private Tencent Cloud COS bucket.</p>
+          <a class="inline-link" href="./privacy/">Privacy policy</a>
+        </div>
+        <ul class="sync-list">
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#network"></use></svg>
+      <div>
+        <h3>Direct device sync</h3>
+        <p>Compare the verification code on both devices before syncing. Choose how to merge changes or which copy to keep.</p>
+      </div>
+    </li>
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#cloud"></use></svg>
+      <div>
+        <h3>Tencent Cloud COS</h3>
+        <p>Sync snapshots and backups to a private bucket under your own account.</p>
+      </div>
+    </li>
+    <li>
+      <svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#lock-keyhole"></use></svg>
+      <div>
+        <h3>Separate permissions on iPhone</h3>
+        <p>Manage permissions for DeepSeek, Tencent Cloud COS and device sync in Privacy &amp; Data. Credentials use the system Keychain.</p>
+      </div>
+    </li>
+  </ul>
+      </section>
+    </div>
+    <section class="wrap section platform-section" id="platforms" data-reveal>
+      <h2>Phone and desktop</h2>
+      <p>The iPhone and Android layouts fit smaller screens. The macOS and Windows layouts keep the conversation list next to the chat.</p>
+      <ul class="platform-list">
+        <li><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#smartphone"></use></svg><span>iPhone</span></li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#smartphone"></use></svg><span>Android</span></li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#laptop"></use></svg><span>macOS</span></li><li><svg class="icon " aria-hidden="true" focusable="false"><use href="./assets/icons.svg#monitor"></use></svg><span>Windows</span></li>
+      </ul>
+      <p class="download-availability">Gitee V1.0.1 includes Windows and Android installers.</p>
+    </section>
+  </main>
+  <footer class="bottom">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="./"><img src="./assets/shark.png" width="26" height="26" alt="">DeepShart</a>
+        <span>Made by Muxi</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="./privacy/">Privacy policy</a> <a href="./terms/">Terms of use</a> <a href="./support/">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

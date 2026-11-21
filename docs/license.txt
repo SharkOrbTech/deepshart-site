@@ -1,0 +1,57 @@
+DeepShart 个人非商业使用许可协议
+DeepShart Personal Non-Commercial License
+
+Copyright (c) 2026 DeepShart Authors. All rights reserved.
+版权所有 (c) 2026 DeepShart 作者。保留所有权利。
+
+本许可适用于 DeepShart 项目及其源码、文档和相关文件（以下称"本软件"）。
+This license applies to the DeepShart project, its source code, documentation,
+and related files (the "Software").
+
+【授予的权利 / GRANT OF RIGHTS】
+在遵守本协议条款的前提下，版权持有人授予您一项免费、不可转让、不可再许可的
+权利，仅用于个人、非商业目的：使用、复制、修改、研究本软件源码，以及向他人
+分发未经修改或经修改的源码副本。
+Subject to the terms of this Agreement, the copyright holder grants you a free,
+non-transferable, non-sublicensable license to use, copy, modify, study, and
+distribute copies of the Software, solely for personal, non-commercial purposes.
+
+【商业使用限制 / NON-COMMERCIAL RESTRICTION】
+"商业使用"指任何直接或间接为获取金钱或其他商业利益而使用本软件的行为，
+包括但不限于：
+"Commercial Use" means any use of the Software directly or indirectly for
+monetary gain or other commercial advantage, including but not limited to:
+
+1. 将本软件或其衍生作品用于公司、企业或其他组织的业务运营；
+   Using the Software or derivative works in the business operations of a
+   company, enterprise, or other organization;
+2. 销售、出租、转售本软件或基于本软件的产品与服务；
+   Selling, renting, or reselling the Software or products/services based on it;
+3. 以本软件为基础提供收费的在线服务或软件即服务（SaaS）；
+   Providing paid online services or Software-as-a-Service based on the Software;
+4. 在本软件中嵌入广告、赞助或任何形式的商业变现；
+   Embedding advertising, sponsorship, or any form of monetization in the Software;
+5. 任何以盈利为目的的训练、部署或分发行为。
+   Any training, deployment, or distribution for profit-oriented purposes.
+
+上述商业使用必须事先获得版权持有人的书面许可。
+Any Commercial Use requires prior written permission from the copyright holder.
+
+【其他限制 / OTHER RESTRICTIONS】
+您不得：移除本许可声明或版权声明；将本软件用于任何违法用途。
+You may not remove this license or copyright notices, or use the Software for
+any unlawful purpose.
+
+【免责声明 / DISCLAIMER】
+本软件按"现状"提供，不附带任何明示或暗示的保证，包括但不限于适销性、
+特定用途适用性和不侵权保证。在任何情况下，版权持有人均不对因使用或无法
+使用本软件而产生的任何索赔、损害或其他责任负责。
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+
+【权利保留 / RESERVATION OF RIGHTS】
+本许可未明确授予的所有权利均由版权持有人保留。
+All rights not expressly granted herein are reserved by the copyright holder.
