@@ -22,7 +22,9 @@
     alternate.search = location.search;
     alternate.hash = location.hash;
     location.replace(alternate);
+    return;
   }
+  storage.set('deepshart-language', root.dataset.language);
 
   addEventListener('DOMContentLoaded', () => {
     const language = document.querySelector('[data-set-language]');
