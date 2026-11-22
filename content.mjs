@@ -18,7 +18,7 @@ export const languages = {
     home: {
       title: 'DeepShart for phone and desktop',
       heading: ['Long chats.', 'Keep going.'],
-      description: 'Use your own DeepSeek API key and pay as you go.',
+      description: 'When you want to revisit a conversation that mattered, it’s still there.',
       androidDownload: 'Download for Android',
       windowsDownload: 'Download for Windows',
       viewOnGitee: 'View on Gitee',
@@ -84,7 +84,7 @@ export const languages = {
     home: {
       title: 'DeepShart 手机与电脑客户端',
       heading: ['长对话，', '接着聊下去。'],
-      description: '用自己的 DeepSeek API Key 聊天，费用按实际用量计算。',
+      description: '那些认真聊过的事，哪天想回看，还在原来的对话里。',
       androidDownload: 'Android 手机下载',
       windowsDownload: 'Windows 电脑下载',
       viewOnGitee: '在 Gitee 查看',
