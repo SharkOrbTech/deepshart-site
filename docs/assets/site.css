@@ -12,7 +12,6 @@
   --muted: #526078;
   --line: #dce4f0;
   --accent: #174db0;
-  --accent-hover: #123984;
   --on-accent: #fff;
   --panel: #e4edfb;
   --tint: #f0f5fc;
@@ -38,7 +37,6 @@
     --muted: #b2c0d5;
     --line: #2d3d54;
     --accent: #a4c5ff;
-    --accent-hover: #c2d8ff;
     --on-accent: #0b234c;
     --panel: #202f4b;
     --tint: #162237;
@@ -63,7 +61,6 @@
   --muted: #b2c0d5;
   --line: #2d3d54;
   --accent: #a4c5ff;
-  --accent-hover: #c2d8ff;
   --on-accent: #0b234c;
   --panel: #202f4b;
   --tint: #162237;
@@ -237,28 +234,20 @@ h1 {
   justify-content: center;
   align-items: center;
   min-height: 2.9rem;
-  gap: .55rem;
+  gap: .65rem;
   padding: .55rem 1rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--line);
   border-radius: .45rem;
+  background: var(--surface);
+  color: var(--ink);
   font-weight: 650;
   text-decoration: none;
   transition: background-color .18s ease, color .18s ease, border-color .18s ease;
 }
-.primary { background: var(--accent); color: var(--on-accent); }
-.primary:hover { background: var(--accent-hover); }
-.gitee-link {
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  margin-top: .8rem;
-  padding-block: .25rem;
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color .18s ease;
-}
-.gitee-link:hover { color: var(--accent); text-decoration: underline; }
+.hero-links .button { min-width: 7.5rem; }
+.button img { flex: none; }
+.gitee-link { margin-top: .65rem; background: transparent; }
+.button:hover { background: var(--tint); border-color: var(--accent); color: var(--accent); }
 .gitee-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
 
 .showcase {

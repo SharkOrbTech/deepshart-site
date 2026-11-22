@@ -1,8 +1,10 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { languages, site } from './content.mjs';
 
 const output = new URL('./docs/', import.meta.url).pathname;
+const stylesheetVersion = createHash('sha256').update(await readFile(join(output, 'assets/site.css'))).digest('hex').slice(0, 12);
 const routes = ['', 'privacy', 'terms', 'support'];
 const escape = (text) => String(text).replace(/[&<>"']/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
@@ -60,10 +62,10 @@ function home(root, language, content) {
         <h1>${data.heading.map((line) => `<span>${escape(line)}</span>`).join(' ')}</h1>
         <p>${escape(data.description)}</p>
         <div class="hero-links">
-          <a class="button primary" href="${root}${site.android}" download>${icon(root, 'smartphone')} ${escape(data.androidDownload)}</a>
-          <a class="button primary" href="${root}${site.windows}" download>${icon(root, 'monitor')} ${escape(data.windowsDownload)}</a>
+          <a class="button" href="${root}${site.android}" download><img src="${root}assets/android.svg" width="24" height="14" alt="">Android</a>
+          <a class="button" href="${root}${site.windows}" download><img src="${root}assets/windows.png" width="18" height="18" alt="">Windows</a>
         </div>
-        <a class="gitee-link" href="${site.download}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.download)}</a>
+        <a class="button gitee-link" href="${site.download}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.download)}</a>
       </div>
       ${showcase(root, data)}
     </section>
@@ -100,6 +102,7 @@ function legal(root, language, page, content) {
     license: [root + 'license.txt', isChinese ? '《DeepShart 个人非商业使用许可协议》' : 'DeepShart Personal Non-Commercial License'],
     githubPrivacy: [site.githubPrivacy, isChinese ? '《GitHub 隐私声明》' : 'GitHub Privacy Statement'],
     deepseek: [site.deepSeekTerms, isChinese ? '《DeepSeek 开放平台服务协议》' : 'DeepSeek Open Platform Terms of Service'],
+    androidArtworkLicense: ['https://creativecommons.org/licenses/by/3.0/', isChinese ? '知识共享署名 3.0 许可' : 'Creative Commons Attribution 3.0 License'],
   };
   const text = (paragraph) => escape(paragraph).replace(/\{(\w+)\}/g, (_, name) => {
     const [href, label] = links[name];
@@ -153,7 +156,7 @@ function html(language, page) {
   <meta property="og:image" content="${site.origin}/assets/desktop.webp">
   <link rel="icon" type="image/png" href="${root}assets/shark.png">
   <script src="${root}assets/preferences.js"></script>
-  <link rel="stylesheet" href="${root}assets/site.css">
+  <link rel="stylesheet" href="${root}assets/site.css?v=${stylesheetVersion}">
 </head>
 <body>
   <a class="skip" href="#main">${content.ui.skip}</a>
