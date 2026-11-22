@@ -60,9 +60,10 @@ function home(root, language, content) {
         <h1>${data.heading.map((line) => `<span>${escape(line)}</span>`).join(' ')}</h1>
         <p>${escape(data.description)}</p>
         <div class="hero-links">
-          <a class="button primary" href="${site.download}">${icon(root, 'gitee', 'download-icon')} ${escape(data.download)}</a>
-          <a class="button secondary" href="#features">${escape(data.showFeatures)}</a>
+          <a class="button primary" href="${root}${site.android}" download>${icon(root, 'smartphone')} ${escape(data.androidDownload)}</a>
+          <a class="button primary" href="${root}${site.windows}" download>${icon(root, 'monitor')} ${escape(data.windowsDownload)}</a>
         </div>
+        <a class="gitee-link" href="${site.download}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.download)}</a>
       </div>
       ${showcase(root, data)}
     </section>
@@ -86,7 +87,6 @@ function home(root, language, content) {
         ${[['smartphone', 'iPhone'], ['smartphone', 'Android'], ['laptop', 'macOS'], ['monitor', 'Windows']].map(([symbol, name]) =>
           `<li>${icon(root, symbol)}<span>${name}</span></li>`).join('')}
       </ul>
-      <p class="download-availability">${escape(data.downloadAvailability)}</p>
     </section>
   </main>`;
 }

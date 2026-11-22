@@ -247,9 +247,19 @@ h1 {
 }
 .primary { background: var(--accent); color: var(--on-accent); }
 .primary:hover { background: var(--accent-hover); }
-.download-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
-.secondary { border-color: var(--line); color: var(--ink); }
-.secondary:hover { color: var(--accent); border-color: var(--accent); }
+.gitee-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: .8rem;
+  padding-block: .25rem;
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+.gitee-link:hover { color: var(--accent); text-decoration: underline; }
+.gitee-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
 
 .showcase {
   position: relative;
@@ -433,7 +443,6 @@ h3 { font-size: 1.16rem; line-height: 1.32; font-weight: 685; }
 }
 .platform-list .icon { width: 1.45rem; height: 1.45rem; }
 
-.platform-section > .download-availability { margin-top: 1.22rem; }
 .bottom { background: var(--tint); transition: background-color .2s ease; }
 .footer-inner {
   display: flex;

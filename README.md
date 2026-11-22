@@ -1,6 +1,6 @@
 # DeepShart website
 
-The DeepShart product site is published at [deepshart.lol](https://deepshart.lol) using GitHub Pages from `main:/docs`.
+The DeepShart product site is published at [deepshart.lol](https://deepshart.lol). The GitHub Pages workflow publishes `docs/` and extracts the Android APK from the Gitee release archive into the versioned downloads directory.
 
 Edit the English and Simplified Chinese copy in `content.mjs`, then regenerate the static pages.
 
