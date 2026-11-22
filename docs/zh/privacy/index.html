@@ -51,19 +51,19 @@
       </header>
       <section>
         <h2>本机数据</h2>
-        <p>DeepShart 在设备上保存对话、设置、记忆、已选附件和本机备份，以便显示、搜索、导入、导出与恢复。在 iPhone 上，DeepSeek 和腾讯云 COS 的凭证保存在系统 Keychain 中。</p><p>应用没有 DeepShart 账户注册、广告跟踪或内置分析服务。</p>
+        <p>DeepShart 在设备上保存对话、设置、记忆、已选附件和本机备份，以便显示、搜索、导入、导出与恢复。在 iPhone 上，DeepSeek API Key 保存在系统 Keychain 中。</p><p>应用没有 DeepShart 账户注册、广告跟踪或内置分析服务。</p>
       </section><section>
         <h2>DeepSeek API</h2>
         <p>使用 DeepSeek 时，应用以你的 API Key 验证身份，并按功能发送提示词、相关对话历史、记忆和所选附件，以生成回答、联网搜索、摘要和提取记忆。测试连接、读取模型列表和查询额度也会发送认证请求。</p><p>DeepSeek 根据适用的<a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">《DeepSeek 开放平台服务协议》</a>和账户约定处理请求与连接信息。数据可能在中国大陆或 DeepSeek 使用的其他司法辖区处理。保留期限和进一步用途取决于适用的账户约定。发送前请检查输入中的个人信息。</p>
       </section><section>
         <h2>腾讯云 COS</h2>
-        <p>配置 COS 后，应用用你的凭证为请求签名，向指定存储桶上传或从中下载对话快照、备份和同步删除记录。自动同步按你的设置运行。存储地域、访问权限和保留期限由你配置。</p>
+        <p>在 Android 和桌面端，你可以配置 COS 来上传和下载对话快照、备份及同步删除记录。应用使用你的凭证为发往指定存储桶的请求签名。自动同步按你的设置运行。存储地域、访问权限和保留期限由你配置。</p>
       </section><section>
         <h2>设备同步</h2>
         <p>应用通过 WebRTC 与你配对的设备交换对话、快照、备份和同步记录。配对期间，对端可以看到设备名称与标识。</p><p>PeerJS Cloud 提供信令。腾讯、小米、哔哩哔哩和 Google 的 STUN 服务用于建立连接。这些服务可能收到网络地址和建立连接所需的信令信息。</p>
       </section><section>
         <h2>授权、保留与删除</h2>
-        <p>在 iPhone 上，各项服务在首次传输前需要通过「全局设置 → 隐私与数据」分别授权。你可以随时撤回。撤回后，应用停止启动面向该服务的新传输。已经发送的数据受接收方的存储和保留设置约束。</p><p>你可以在应用内删除对话、附件和本地备份，清空 API Key 输入框并保存以移除密钥，或在 COS 设置中清除凭证。配对设备与 COS 存储桶中的副本可在对应位置删除。对于 DeepSeek 持有的数据，请联系 DeepSeek。</p>
+        <p>在 iPhone 上，使用 DeepSeek 和设备同步前，需要通过「全局设置 → 关于 → 隐私与数据」分别授权。你可以随时撤回。撤回后，应用停止启动面向该服务的新传输。已经发送的数据受接收方的存储和保留设置约束。</p><p>你可以在应用内删除对话、附件和本地备份，或清空 API Key 输入框并保存以移除密钥。在 Android 和桌面端，你可以在 COS 设置中清除凭证。配对设备与 COS 存储桶中的副本可在对应位置删除。对于 DeepSeek 持有的数据，请联系 DeepSeek。</p>
       </section><section>
         <h2>官网与支持</h2>
         <p>本官网由 GitHub Pages 托管。根据<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">《GitHub 隐私声明》</a>，GitHub 基于安全目的记录访问者的 IP 地址。官网将语言和主题偏好保存在你的浏览器内，页面没有广告或分析脚本。</p><p>联系支持时，我们使用你提供的地址和说明处理请求，并按解决问题或履行法律义务所需的期限保留。查阅、更正、删除等隐私请求可发送到 <a href="mailto:hi@sharkorb.com">hi@sharkorb.com</a>。</p>
