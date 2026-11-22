@@ -62,10 +62,10 @@ function home(root, language, content) {
         <h1>${data.heading.map((line) => `<span>${escape(line)}</span>`).join(' ')}</h1>
         <p>${escape(data.description)}</p>
         <div class="hero-links">
-          <a class="button" href="${root}${site.android}" download><img src="${root}assets/android.svg" width="24" height="14" alt="">Android</a>
-          <a class="button" href="${root}${site.windows}" download><img src="${root}assets/windows.png" width="18" height="18" alt="">Windows</a>
+          <a class="button" href="${root}${site.android}" download><img src="${root}assets/android.svg" width="24" height="14" alt="">${escape(data.androidDownload)}</a>
+          <a class="button" href="${root}${site.windows}" download><img src="${root}assets/windows.png" width="18" height="18" alt="">${escape(data.windowsDownload)}</a>
         </div>
-        <a class="button gitee-link" href="${site.download}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.download)}</a>
+        <a class="button gitee-link" href="${site.gitee}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.viewOnGitee)}</a>
       </div>
       ${showcase(root, data)}
     </section>
