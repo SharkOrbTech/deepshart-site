@@ -61,6 +61,9 @@ function home(root, language, content) {
       <div class="hero-copy">
         <h1>${data.heading.map((line) => `<span>${escape(line)}</span>`).join(' ')}</h1>
         <p>${escape(data.description)}</p>
+        <div class="hero-primary">
+          <a class="button button-primary" href="${site.web}">${icon(root, 'globe')} ${escape(data.webApp)}</a>
+        </div>
         <div class="hero-links">
           <a class="button" href="${root}${site.android}" download><img src="${root}assets/android.svg" width="24" height="14" alt="">${escape(data.androidDownload)}</a>
           <a class="button" href="${root}${site.windows}" download><img src="${root}assets/windows.png" width="18" height="18" alt="">${escape(data.windowsDownload)}</a>

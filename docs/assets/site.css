@@ -222,11 +222,15 @@ h1 {
   text-wrap: pretty;
 }
 
+.hero-primary {
+  margin-top: 1.85rem;
+}
+
 .hero-links {
   display: flex;
   flex-wrap: wrap;
   gap: .65rem;
-  margin-top: 1.85rem;
+  margin-top: .65rem;
 }
 
 .button {
@@ -242,12 +246,24 @@ h1 {
   color: var(--ink);
   font-weight: 650;
   text-decoration: none;
-  transition: background-color .18s ease, color .18s ease, border-color .18s ease;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, opacity .18s ease;
+}
+.button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+  padding-inline: 1.25rem;
+}
+.button-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+  opacity: .9;
 }
 .hero-links .button { min-width: 7.5rem; }
 .button img { flex: none; }
 .gitee-link { margin-top: .65rem; background: transparent; }
-.button:hover { background: var(--tint); border-color: var(--accent); color: var(--accent); }
+.button:not(.button-primary):hover { background: var(--tint); border-color: var(--accent); color: var(--accent); }
 .gitee-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
 
 .showcase {
@@ -478,7 +494,8 @@ h3 { font-size: 1.16rem; line-height: 1.32; font-weight: 685; }
   .hero h1 { font-size: clamp(2rem, 8vw, 3.45rem); }
   :lang(zh) .hero h1 { font-size: clamp(2rem, 7.9vw, 3.3rem); }
   .hero-copy > p { margin-top: 1rem; }
-  .hero-links { margin-top: 1.25rem; }
+  .hero-primary { margin-top: 1.25rem; }
+  .hero-links { margin-top: .65rem; }
   .showcase { aspect-ratio: 1.14; }
  .desktop { top: 9%; left: 4.5%; width: 87%; }
   .phone { bottom: 6%; right: 4.5%; width: 30.5%; }
