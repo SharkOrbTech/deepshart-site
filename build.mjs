@@ -66,9 +66,11 @@ function home(root, language, content) {
           <a class="button button-primary" href="${site.web}">${icon(root, 'globe')} ${escape(data.webApp)}</a>
         </div>
         <div class="hero-links">
+          <a class="button" href="${site.appStore}" target="_blank" rel="noopener noreferrer">${icon(root, 'apple', 'apple-icon')} ${escape(data.appStoreDownload)}</a>
           <a class="button" href="${root}${site.android}" download><img src="${root}assets/android.svg" width="24" height="14" alt="">${escape(data.androidDownload)}</a>
           <a class="button" href="${root}${site.windows}" download><img src="${root}assets/windows.png" width="18" height="18" alt="">${escape(data.windowsDownload)}</a>
         </div>
+        <p class="download-note">${escape(data.appStoreNote)}</p>
         <a class="button gitee-link" href="${site.gitee}">${icon(root, 'gitee', 'gitee-icon')} ${escape(data.viewOnGitee)}</a>
       </div>
       ${showcase(root, data)}

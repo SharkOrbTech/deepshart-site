@@ -264,7 +264,13 @@ h1 {
 .button img { flex: none; }
 .gitee-link { margin-top: .65rem; background: transparent; }
 .button:not(.button-primary):hover { background: var(--tint); border-color: var(--accent); color: var(--accent); }
-.gitee-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
+.gitee-icon, .apple-icon { fill: currentColor; stroke: none; width: 1.18rem; height: 1.18rem; }
+.hero-copy > p.download-note {
+  margin-top: .55rem;
+  font-size: .85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
 
 .showcase {
   position: relative;
