@@ -5,6 +5,7 @@ import { languages, site } from './content.mjs';
 
 const output = new URL('./docs/', import.meta.url).pathname;
 const stylesheetVersion = createHash('sha256').update(await readFile(join(output, 'assets/site.css'))).digest('hex').slice(0, 12);
+const iconsVersion = createHash('sha256').update(await readFile(join(output, 'assets/icons.svg'))).digest('hex').slice(0, 12);
 const routes = ['', 'privacy', 'terms', 'support'];
 const escape = (text) => String(text).replace(/[&<>"']/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
@@ -16,7 +17,7 @@ function pathFor(language, page = '') {
 }
 
 function icon(root, name, className = '') {
-  return `<svg class="icon ${className}" aria-hidden="true" focusable="false"><use href="${root}assets/icons.svg#${name}"></use></svg>`;
+  return `<svg class="icon ${className}" aria-hidden="true" focusable="false"><use href="${root}assets/icons.svg?v=${iconsVersion}#${name}"></use></svg>`;
 }
 
 function sectionItems(root, items, className) {
