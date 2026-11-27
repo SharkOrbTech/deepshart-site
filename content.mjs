@@ -5,8 +5,8 @@ export const site = {
   web: 'https://web.deepshart.lol',
   appStore: 'https://apps.apple.com/us/app/deepshart/id6837659406',
   gitee: 'https://gitee.com/sharkymuxii/deep-shart',
-  android: 'downloads/V1.0.1/DeepShart-android.apk',
-  windows: 'downloads/V1.0.1/DeepShart-Setup.exe',
+  android: 'downloads/V1.1.0/DeepShart-android.apk',
+  windows: 'downloads/V1.1.0/DeepShart-Setup.exe',
   githubPrivacy: 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement',
   deepSeekTerms: 'https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html',
 };
