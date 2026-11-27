@@ -18,9 +18,15 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - name: Extract Android installer
+      - name: Extract Android installers
+        shell: bash
         run: |
-          unzip -p release-assets/V1.0.1/DeepShart-android.zip DeepShart-android.apk > docs/downloads/V1.0.1/DeepShart-android.apk
+          shopt -s nullglob
+          for archive in release-assets/*/DeepShart-android.zip; do
+            ver="$(basename "$(dirname "$archive")")"
+            mkdir -p "docs/downloads/$ver"
+            unzip -p "$archive" DeepShart-android.apk > "docs/downloads/$ver/DeepShart-android.apk"
+          done
       - uses: actions/upload-pages-artifact@v4
         with:
           path: docs
